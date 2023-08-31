@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 function App() {
   return (
     <motion.div
-      initial={{ y: -500, opacity: 0 }}
+      initial={{ y: -200, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
       className={s.root}
@@ -92,8 +92,9 @@ function App() {
       </div>
       <motion.div
         initial={{ x: 300, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 2.5 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
       >
         <p>
           Ссылка на это приложение:{' '}
