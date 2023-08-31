@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: #5cdb95;
+  background-color: #1f2833;
 
   margin: size(50) size(200);
 
@@ -20,13 +20,22 @@
   }
 }
 
+.wrapper {
+  display: flex;
+  gap: size(30);
+  @include mobile {
+    flex-direction: column;
+    gap: size(20);
+  }
+}
+
 .imageBlock {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: size(20);
 
   @include mobile {
-    flex-direction: column;
     gap: size(20);
   }
   // gap: size(30);
@@ -38,6 +47,11 @@
   img {
     width: 100%;
     object-fit: contain;
+    border-radius: size(20);
+  }
+
+  @include mobile {
+    width: auto;
   }
 }
 

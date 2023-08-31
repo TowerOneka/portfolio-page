@@ -19,9 +19,9 @@ body {
 
   --screen-size: #{$baseScreenSize};
 
-  background-color: #edf5e1;
+  background-color: #0b0c10;
 
-  color: #05386b;
+  color: #c5c6c7;
 
   font-style: normal;
   font-weight: 500;
@@ -31,7 +31,11 @@ body {
   }
 }
 
+h1 {
+  color: #66fcf1;
+}
+
 a {
-  color: #edf5e1;
+  color: #66fcf1;
   text-decoration: none;
 }
